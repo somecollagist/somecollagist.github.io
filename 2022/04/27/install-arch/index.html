@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Arch Linux Installation Tutorial - somecollagist</title><link rel="manifest" href="../../../../manifest.json"><meta name="application-name" content="somecollagist"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="somecollagist"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Until about 6 months ago, I’d never really considered linux to be an operating system I’d use in the future - Windows was familiar to me, I knew how to make programs work in it, and linux just seemed"><meta property="og:type" content="blog"><meta property="og:title" content="Arch Linux Installation Tutorial"><meta property="og:url" content="http://somecollagist.github.io/2022/04/27/install-arch/"><meta property="og:site_name" content="somecollagist"><meta property="og:description" content="Until about 6 months ago, I’d never really considered linux to be an operating system I’d use in the future - Windows was familiar to me, I knew how to make programs work in it, and linux just seemed"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/archsys.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/archinstall.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/archterminal.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/fdisk.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/fdisk_install-arch/dev.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/blank.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_2install-arch/G.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/primary.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/type.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_type2install-arch/.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/write.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/filesys.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/mounting.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/get_install-arch/reflector.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/pacstrap.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/pacstrap_install-arch/done.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/chroot.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/localegen.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/localeconf.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/hostname.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/hosts.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/dhcpcd.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/rootpasswd.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/makeuser.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/sudoers.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/grub.png"><meta property="article:published_time" content="2022-04-27T14:16:31.000Z"><meta property="article:modified_time" content="2022-04-28T20:43:06.905Z"><meta property="article:author" content="Johann Scott"><meta property="article:tag" content="Operating System"><meta property="article:tag" content="Linux"><meta property="article:tag" content="Arch"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/2022/04/27/install-arch/archsys.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://somecollagist.github.io/2022/04/27/install-arch/"},"headline":"Arch Linux Installation Tutorial","image":["http://somecollagist.github.io/2022/04/27/install-arch/archsys.png","http://somecollagist.github.io/2022/04/27/install-arch/archinstall.png","http://somecollagist.github.io/2022/04/27/install-arch/archterminal.png","http://somecollagist.github.io/2022/04/27/install-arch/fdisk.png","http://somecollagist.github.io/2022/04/27/install-arch/fdisk_install-arch/dev.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/blank.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_2install-arch/G.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/primary.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/type.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_type2install-arch/.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/write.png","http://somecollagist.github.io/2022/04/27/install-arch/filesys.png","http://somecollagist.github.io/2022/04/27/install-arch/mounting.png","http://somecollagist.github.io/2022/04/27/install-arch/get_install-arch/reflector.png","http://somecollagist.github.io/2022/04/27/install-arch/pacstrap.png","http://somecollagist.github.io/2022/04/27/install-arch/pacstrap_install-arch/done.png","http://somecollagist.github.io/2022/04/27/install-arch/chroot.png","http://somecollagist.github.io/2022/04/27/install-arch/localegen.png","http://somecollagist.github.io/2022/04/27/install-arch/localeconf.png","http://somecollagist.github.io/2022/04/27/install-arch/hostname.png","http://somecollagist.github.io/2022/04/27/install-arch/hosts.png","http://somecollagist.github.io/2022/04/27/install-arch/dhcpcd.png","http://somecollagist.github.io/2022/04/27/install-arch/rootpasswd.png","http://somecollagist.github.io/2022/04/27/install-arch/makeuser.png","http://somecollagist.github.io/2022/04/27/install-arch/sudoers.png","http://somecollagist.github.io/2022/04/27/install-arch/grub.png"],"datePublished":"2022-04-27T14:16:31.000Z","dateModified":"2022-04-28T20:43:06.905Z","author":{"@type":"Person","name":"Johann Scott"},"publisher":{"@type":"Organization","name":"somecollagist","logo":{"@type":"ImageObject","url":"http://somecollagist.github.io/img/logo.svg"}},"description":"Until about 6 months ago, I’d never really considered linux to be an operating system I’d use in the future - Windows was familiar to me, I knew how to make programs work in it, and linux just seemed"}</script><link rel="canonical" href="http://somecollagist.github.io/2022/04/27/install-arch/"><link rel="icon" href="../../../../img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet"><link rel="stylesheet" href="../../../../css/jstyle.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Arch Linux Installation Tutorial - somecollagist</title><link rel="manifest" href="../../../../manifest.json"><meta name="application-name" content="somecollagist"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="somecollagist"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Until about 6 months ago, I’d never really considered linux to be an operating system I’d use in the future - Windows was familiar to me, I knew how to make programs work in it, and linux just seemed"><meta property="og:type" content="blog"><meta property="og:title" content="Arch Linux Installation Tutorial"><meta property="og:url" content="http://somecollagist.github.io/2022/04/27/install-arch/"><meta property="og:site_name" content="somecollagist"><meta property="og:description" content="Until about 6 months ago, I’d never really considered linux to be an operating system I’d use in the future - Windows was familiar to me, I knew how to make programs work in it, and linux just seemed"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/archsys.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/archinstall.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/archterminal.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/fdisk.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/fdisk_install-arch/dev.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/blank.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_2install-arch/G.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/primary.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/type.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_type2install-arch/.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/write.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/filesys.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/mounting.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/get_install-arch/reflector.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/pacstrap.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/pacstrap_install-arch/done.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/chroot.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/localegen.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/localeconf.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/hostname.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/hosts.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/dhcpcd.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/rootpasswd.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/makeuser.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/sudoers.png"><meta property="og:image" content="http://somecollagist.github.io/2022/04/27/install-arch/grub.png"><meta property="article:published_time" content="2022-04-27T14:16:31.000Z"><meta property="article:modified_time" content="2022-04-28T20:54:50.036Z"><meta property="article:author" content="Johann Scott"><meta property="article:tag" content="Operating System"><meta property="article:tag" content="Linux"><meta property="article:tag" content="Arch"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/2022/04/27/install-arch/archsys.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://somecollagist.github.io/2022/04/27/install-arch/"},"headline":"Arch Linux Installation Tutorial","image":["http://somecollagist.github.io/2022/04/27/install-arch/archsys.png","http://somecollagist.github.io/2022/04/27/install-arch/archinstall.png","http://somecollagist.github.io/2022/04/27/install-arch/archterminal.png","http://somecollagist.github.io/2022/04/27/install-arch/fdisk.png","http://somecollagist.github.io/2022/04/27/install-arch/fdisk_install-arch/dev.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/blank.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_2install-arch/G.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/primary.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/type.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_type2install-arch/.png","http://somecollagist.github.io/2022/04/27/install-arch/cfdisk_install-arch/write.png","http://somecollagist.github.io/2022/04/27/install-arch/filesys.png","http://somecollagist.github.io/2022/04/27/install-arch/mounting.png","http://somecollagist.github.io/2022/04/27/install-arch/get_install-arch/reflector.png","http://somecollagist.github.io/2022/04/27/install-arch/pacstrap.png","http://somecollagist.github.io/2022/04/27/install-arch/pacstrap_install-arch/done.png","http://somecollagist.github.io/2022/04/27/install-arch/chroot.png","http://somecollagist.github.io/2022/04/27/install-arch/localegen.png","http://somecollagist.github.io/2022/04/27/install-arch/localeconf.png","http://somecollagist.github.io/2022/04/27/install-arch/hostname.png","http://somecollagist.github.io/2022/04/27/install-arch/hosts.png","http://somecollagist.github.io/2022/04/27/install-arch/dhcpcd.png","http://somecollagist.github.io/2022/04/27/install-arch/rootpasswd.png","http://somecollagist.github.io/2022/04/27/install-arch/makeuser.png","http://somecollagist.github.io/2022/04/27/install-arch/sudoers.png","http://somecollagist.github.io/2022/04/27/install-arch/grub.png"],"datePublished":"2022-04-27T14:16:31.000Z","dateModified":"2022-04-28T20:54:50.036Z","author":{"@type":"Person","name":"Johann Scott"},"publisher":{"@type":"Organization","name":"somecollagist","logo":{"@type":"ImageObject","url":"http://somecollagist.github.io/img/logo.svg"}},"description":"Until about 6 months ago, I’d never really considered linux to be an operating system I’d use in the future - Windows was familiar to me, I knew how to make programs work in it, and linux just seemed"}</script><link rel="canonical" href="http://somecollagist.github.io/2022/04/27/install-arch/"><link rel="icon" href="../../../../img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet"><link rel="stylesheet" href="../../../../css/jstyle.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
   (function () {
       function switchTab() {
           if (!location.hash) {
@@ -27,44 +27,21 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="../../../../index.html"><img src="../../../../img/logo.svg" alt="somecollagist" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="../../../../index.html">Home</a><a class="navbar-item" href="../../../../archives">Archives</a><a class="navbar-item" href="../../../../categories">Categories</a><a class="navbar-item" href="../../../../tags">Tags</a><a class="navbar-item" href="../../../../about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2022-04-27T14:16:31.000Z" title="27/04/2022, 15:16:31">2022-04-27</time></span><span class="level-item">Updated&nbsp;<time dateTime="2022-04-28T20:43:06.905Z" title="28/04/2022, 21:43:06">2022-04-28</time></span><span class="level-item">22 minutes read (About 3252 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Arch Linux Installation Tutorial</h1><div class="content"><p>Until about 6 months ago, I’d never really considered linux to be an operating system I’d use in the future - Windows was familiar to me, I knew how to make programs work in it, and linux just seemed to difficult to get working.<br>But eventually I chose to bit the proverbial bullet and switched my PC over from Windows 11 to <a target="_blank" rel="noopener" href="https://garudalinux.org/">Garuda</a>, and I was immediately hooked. I later switched to Arch on that computer, and having recently fixed an old laptop of mine I’ve installed it on that too. The one thing that did get me though was that I was following two tutorials, one from the <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/installation_guide">official Arch wiki</a> and another from <a target="_blank" rel="noopener" href="https://phoenixnap.com/kb/arch-linux-install">phoenixNAP</a>, with a variety of other websites to set up the rest of my operating system.<br>So, I decided to inaugurate my blog with a tutorial on how I installed and set up Arch, let’s go!</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/archsys.png" alt="My desktop on Arch" title="My Desktop on Arch"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>My desktop on Arch</td>
-</tr>
-</tbody></table>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="../../../../index.html"><img src="../../../../img/logo.svg" alt="somecollagist" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="../../../../index.html">Home</a><a class="navbar-item" href="../../../../archives">Archives</a><a class="navbar-item" href="../../../../categories">Categories</a><a class="navbar-item" href="../../../../tags">Tags</a><a class="navbar-item" href="../../../../about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2022-04-27T14:16:31.000Z" title="27/04/2022, 15:16:31">2022-04-27</time></span><span class="level-item">Updated&nbsp;<time dateTime="2022-04-28T20:54:50.036Z" title="28/04/2022, 21:54:50">2022-04-28</time></span><span class="level-item">22 minutes read (About 3305 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Arch Linux Installation Tutorial</h1><div class="content"><p>Until about 6 months ago, I’d never really considered linux to be an operating system I’d use in the future - Windows was familiar to me, I knew how to make programs work in it, and linux just seemed to difficult to get working.<br>But eventually I chose to bit the proverbial bullet and switched my PC over from Windows 11 to <a target="_blank" rel="noopener" href="https://garudalinux.org/">Garuda</a>, and I was immediately hooked. I later switched to Arch on that computer, and having recently fixed an old laptop of mine I’ve installed it on that too. The one thing that did get me though was that I was following two tutorials, one from the <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/installation_guide">official Arch wiki</a> and another from <a target="_blank" rel="noopener" href="https://phoenixnap.com/kb/arch-linux-install">phoenixNAP</a>, with a variety of other websites to set up the rest of my operating system.<br>So, I decided to inaugurate my blog with a tutorial on how I installed and set up Arch, based off these sources - let’s go!</p>
+<p><img src="/2022/04/27/install-arch/archsys.png" alt="My desktop on Arch" title="My Desktop on Arch"></p>
 <h1 id="My-Setup"><a href="#My-Setup" class="headerlink" title="My Setup"></a>My Setup</h1><p>The great thing about Arch is that you get a very minimal setup upon install - a command line is pretty much all you get. On the one hand, it can make it somewhat daunting to setup, but on the other hand, you can customise it pretty much however you want. I’ll be showing you how to install arch and set it up like mine, but you can totally change some things around to suit your preferences! If you’re a first time linux user, I suggest trying out a less intensive distro first - Garuda is quite good for gaming on Linux, but if you’re not so bothered about that, try out <a target="_blank" rel="noopener" href="https://manjaro.org/">Manjaro</a> or <a target="_blank" rel="noopener" href="https://ubuntu.com/">Ubuntu</a>. One thing to note however is that Ubuntu is based on Debian, but Garuda and Manjaro are based on Arch, so they’re a little different.</p>
 <h1 id="What-you’ll-need"><a href="#What-you’ll-need" class="headerlink" title="What you’ll need"></a>What you’ll need</h1><h2 id="Arch-install-media"><a href="#Arch-install-media" class="headerlink" title="Arch install media"></a>Arch install media</h2><p>You can download a .iso of arch linux from the <a target="_blank" rel="noopener" href="https://archlinux.org/download/">official website</a> and burn it onto a CD or USB. The tools I’ve used for this are <a target="_blank" rel="noopener" href="https://rufus.ie/en/">Rufus</a> on Windows, GNOME Disk Utility for Linux GNOME users, and Popsicle for all Linux users.</p>
 <h2 id="An-Internet-Connection"><a href="#An-Internet-Connection" class="headerlink" title="An Internet Connection"></a>An Internet Connection</h2><p>While it is possible to configure WiFi networks in the Arch Install Media, I’ve never done it. I opt to use an ethernet cable plugged into the back of my PC or Laptop - the live environment should have all the correct drivers installed so you don’t need to worry much about getting onto the internet.</p>
 <h2 id="Backups"><a href="#Backups" class="headerlink" title="Backups"></a>Backups</h2><p>Installing Arch on a drive <strong>will destroy all data already on that drive</strong>. As such, it’s very important to either make a backup of your drive or at least make a copy of anything you want off the drive (think pictures, songs, documents, configurations, etc.).</p>
-<h1 id="Installing-Arch"><a href="#Installing-Arch" class="headerlink" title="Installing Arch"></a>Installing Arch</h1><p>N.B. I’ll be doing this in <a target="_blank" rel="noopener" href="https://www.qemu.org/">QEMU</a>, so the Machine and View windows you see at the top won’t be there for you.</p>
+<h1 id="Installing-Arch"><a href="#Installing-Arch" class="headerlink" title="Installing Arch"></a>Installing Arch</h1><p>Some important things to note:</p>
+<ul>
+<li>I’m not the official source here, that would be <a target="_blank" rel="noopener" href="https://archlinux.org/">these dudes</a>. So if things go wrong, ask them not me. By the same token, I’m sorry if anything in this ends up being difficult; if you want a proper tutorial, follow their guide.</li>
+<li>I’ll be doing this in <a target="_blank" rel="noopener" href="https://www.qemu.org/">QEMU</a>, so the Machine and View windows you see at the top won’t be there for you.</li>
+</ul>
 <p>You should now be ready to install Arch on your computer. Turn your computer off, plug in your install media, turn your computer on, and enter the BIOS to change the boot order. Accessing BIOS varies between motherboard manufacturers, but typically you’ll want to press either Del or one of the F1-F12 keys - check your motherboard manual or their website for more information on how to do this. Once in the BIOS, change the boot order to boot from USB or Diskette drive first (whichever your install media is on). You’ll be greeted by a menu providing different options, press enter with Arch Linux Install Medium selected.</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/archinstall.png" alt="Select the option with Arch Linux Install Medium" title="Select the option with Arch Linux Install Medium"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Boot options for the install media. Yours might look different to this if you booted in UEFI mode.</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/archinstall.png" alt="Select the option with Arch Linux Install Medium" title="Boot options for the install media. Yours might look different to this if you booted in UEFI mode"></p>
 <p>After a while, you’ll be greeted with a shell. This is where we’re going to be inputting a slew of commands, so get ready for some typing. Be careful though, misclicks could be a serious problem.</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/archterminal.png" alt="Arch shell" title="Arch shell"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>The arch shell you’ll be greeted with after loading.</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/archterminal.png" alt="Arch shell" title="The arch shell you&#39;ll be greeted with after loading"></p>
 <h2 id="Pre-install-checks"><a href="#Pre-install-checks" class="headerlink" title="Pre-install checks"></a>Pre-install checks</h2><p>First comes the simple but important step to make your life way easier - loading up the locale. Because keyboards differ between languages and regions, you might find that trying to type in one character comes out as a completely different character on the screen. I remedy this by running:</p>
 <p><code>loadkeys uk</code></p>
 <p>If you want a different locale for a different keyboard, try running</p>
@@ -86,16 +63,7 @@
 <p>Let’s start by listing the disks present. Run</p>
 <p><code>fdisk -l</code></p>
 <p>to see which storage devices are currently connected to the computer. Identify which drive you want to install Arch on (probably by it’s storage size) - it’ll probably be called something like <code>/dev/sda</code> or <code>/dev/nvme0n1</code>. For the purposes of demonstration, this article will say you want to install Arch on <code>/dev/sda</code>.</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/fdisk.png" alt="fdisk -l" title="fdisk -l"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>fdisk -l</code></td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/fdisk.png" alt="fdisk -l" title="fdisk -l"></p>
 <h3 id="Setting-up-drives-for-BIOS"><a href="#Setting-up-drives-for-BIOS" class="headerlink" title="Setting up drives for BIOS"></a>Setting up drives for BIOS</h3><p>On BIOS, you want to create a DOS partition table for your drive. Run</p>
 <p><code>fdisk /dev/sda</code></p>
 <p>and press <code>o</code> (this creates a DOS partition table), enter, then <code>w</code> to write this to the disk. Now, run</p>
@@ -151,16 +119,7 @@
 <td>[SWAP]</td>
 </tr>
 </tbody></table>
-<table>
-<thead>
-<tr>
-<th><img src="fdisk_install-arch/dev.png" alt="An example of creating partition tables" title="An example of creating partition tables"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>An example of creating filesystems on your drive, I’m using a DOS partition table.</td>
-</tr>
-</tbody></table>
+<p><img src="fdisk_install-arch/dev.png" alt="An example of creating partition tables" title="An example of creating filesystems on your drive, I&#39;m using a DOS partition table."></p>
 <h2 id="Creating-partitions-in-cfdisk"><a href="#Creating-partitions-in-cfdisk" class="headerlink" title="Creating partitions in cfdisk"></a>Creating partitions in <code>cfdisk</code></h2><ol>
 <li><p>Create a new partition by selecting the new tab at the bottom with the arrow keys. <img src="cfdisk_install-arch/blank.png" alt="Select the new tab" title="Select the new tab"></p>
 </li>
@@ -182,16 +141,7 @@
 <p>For your Linux partition, run</p>
 <p><code>mkfs.ext4 [ROOTPART]</code></p>
 <p>to create an ETX4 partition. Keep in mind that if you would rather use a different format, like <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Btrfs">BTRFS</a>, you should run the relevant command instead. This should be done now.</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/filesys.png" alt="Create the filesystems for each of your partitions" title="Create the filesystems for each of your partitons"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>An example of creating filesystems on your partitions</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/filesys.png" alt="Create the filesystems for each of your partitions" title="Create the filesystems for each of your partitons"></p>
 <h2 id="Mounting-drives"><a href="#Mounting-drives" class="headerlink" title="Mounting drives"></a>Mounting drives</h2><p>Now we need to ‘mount’ our drives to actually use them and install Arch onto them. This is simple enough; run the corresponding commands for whichever partitions you’ve made:</p>
 <table>
 <thead>
@@ -213,30 +163,12 @@
 <td><code>swapon [SWAP]</code></td>
 </tr>
 </tbody></table>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/mounting.png" alt="Mount the drives" title="Mount the drives"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Mount the drives</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/mounting.png" alt="Mount the drives" title="Mount the drives"></p>
 <h2 id="Getting-the-reflector"><a href="#Getting-the-reflector" class="headerlink" title="Getting the reflector"></a>Getting the reflector</h2><p>Arch uses <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/pacman">pacman</a> to install packages on your arch system, and it uses mirrors (websites which point to databases of packages) in order to do this. Since Arch can be installed this way, it is imperative to set up the reflector now so packages can be collected for installation. The reflector on the install media will be copied over into the final system during installation.</p>
 <p>To get started, run</p>
 <p><code>pacman -Syy &amp;&amp; pacman -S reflector</code></p>
 <p>to sync the pacman databases and install the <code>reflector</code> package.</p>
-<table>
-<thead>
-<tr>
-<th><img src="get_install-arch/reflector.png" alt="Install the reflector package" title="Install the reflector package"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Install the reflector package</td>
-</tr>
-</tbody></table>
+<p><img src="get_install-arch/reflector.png" alt="Install the reflector package" title="Install the reflector package"></p>
 <p>Once this is done, run</p>
 <p><code>cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak</code></p>
 <p>to create a backup of the current mirrorlist. The install media does come with a list of mirrors, but it’s best to update it. The above command creates a copy of the current mirrorlist so if something goes wrong, you can restore it. Once you’re ready to update the mirror list, run</p>
@@ -247,26 +179,8 @@
 <h2 id="Install-Arch"><a href="#Install-Arch" class="headerlink" title="Install Arch"></a>Install Arch</h2><p>It’s time. To install Arch on a the drive, run</p>
 <p><code> pacstrap /mnt base linux-firmware sudo dhcpcd [text-editor] [kernel]</code></p>
 <p><strong>but replace [text-editor] and [kernel] with packages of your choice.</strong> For my text editor, I use <code>nano</code>, and the most popular kernel packages are <code>linux</code> (the basic model) or <code>linux-zen</code> (good for gaming). Once you’ve written this command with a text editor and a kernel included, hit enter and let the install media do it’s thing. This takes some time, so be patient.</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/pacstrap.png" alt="Run pacstrap to install Arch" title="Run pacstrap to install Arch"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Run <code>pacstrap</code> to install Arch</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th><img src="pacstrap_install-arch/done.png" alt="Ideal output of pacstrap" title="Ideal output of pacstrap"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ideal output of <code>pacstrap</code></td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/pacstrap.png" alt="Run pacstrap to install Arch" title="Run ```pacstrap``` to install Arch"></p>
+<p><img src="pacstrap_install-arch/done.png" alt="Ideal output of pacstrap" title="Ideal output of ```pacstrap```">|</p>
 <p>Once this is done, type the command</p>
 <p><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code></p>
 <p>This is very important, as this will define which drives should be mounted at startup, including the drive where your operating system is stored.</p>
@@ -274,16 +188,7 @@
 <h2 id="Getting-into-the-installed-system"><a href="#Getting-into-the-installed-system" class="headerlink" title="Getting into the installed system"></a>Getting into the installed system</h2><p>You should now be at a point where you can start configuring your system - in order to do this you must first run this command:</p>
 <p><code>arch-chroot /mnt</code></p>
 <p>Immediately after running this, you may notice that your shell has changed. Instead of using ZSH (the default terminal for arch install media), you are now using Bash. This is because Bash is the default shell for an <em>installed</em> Arch system. Any commands you run now will be performed directly on your root partition [ROOTPART].</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/chroot.png" alt="arch-chroot /mnt" title="arch-chroot /mnt"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>arch-chroot &#x2F;mnt means that your shell’s root directory is now on your mounted drive, not the install media.</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/chroot.png" alt="arch-chroot /mnt" title="arch-chroot /mnt means that your shell&#39;s root directory is now on your mounted drive, not the install media."></p>
 <h2 id="Setting-up-the-local-information"><a href="#Setting-up-the-local-information" class="headerlink" title="Setting up the local information"></a>Setting up the local information</h2><p>I usually set the clock first before I customise anything. Run</p>
 <p><code>timedatectl list-timezones</code></p>
 <p>to list all available timezones. They’ll be separated into Region&#x2F;City, so look for your continent and a nearby city. For me, my timezone is Europe&#x2F;London, so I run the command</p>
@@ -299,109 +204,37 @@
 <p>type in the following</p>
 <p><code>LANG=[locale_name]</code></p>
 <p>and then save and exit this file.</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/localeconf.png" alt="Editing locale.conf" title="Editing locale.conf"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>How I set up locale.conf</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/localeconf.png" alt="Editing locale.conf" title="Editing locale.conf"></p>
 <p>To finish setting up the locale, run</p>
 <p><code>locale-gen</code></p>
 <h2 id="Setting-up-internet-access"><a href="#Setting-up-internet-access" class="headerlink" title="Setting up internet access"></a>Setting up internet access</h2><p>Access to the internet is pretty crucial, so let’s sort that out now. To get started, run</p>
 <p><code>nano /etc/hostname</code></p>
 <p>and write in a name for your computer. Remember this, we’ll need it in a bit.</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/hostname.png" alt="Pick a hostname" title="Pick a hostname"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Pick a hostname</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/hostname.png" alt="Pick a hostname" title="Pick a hostname"></p>
 <p>Now run</p>
 <p><code>nano /etc/hosts</code></p>
 <p>and type the following, replacing MyDevice with whatever you’ve called your device:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1 localhost</span><br><span class="line">::1 localhost</span><br><span class="line">127.0.1.1 MyDevice</span><br></pre></td></tr></table></figure>
 
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/hosts.png" alt="Set up host aliases" title="Set up hsot aliases"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Set up host aliases</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/hosts.png" alt="Set up host aliases" title="Set up host aliases"></p>
 <p>And to finish setting up internet access, run</p>
 <p><code>systemctl enable --now dhcpcd</code></p>
 <p>This will activate <code>dhcpcd.service</code> immediately and on startup, so you shouldn’t need to mess about with the internet much more.</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/dhcpcd.png" alt="Enable the DHCPCD service" title="Enable the DHCPCD service"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Enable the DHCPCD service - I got a weird error here but it seems fine</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/dhcpcd.png" alt="Enable the DHCPCD service" title="Enable the DHCPCD service - I got a weird error here but it seems fine"></p>
 <h2 id="Adding-a-user"><a href="#Adding-a-user" class="headerlink" title="Adding a user"></a>Adding a user</h2><p>Up to this point, you’ve been configuring the device as the root user. For those people coming from Windows or MacOS, the root user is Linux’s equivalent of an administrator. This should be secure, so set a root password by running </p>
 <p><code>passwd</code></p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/rootpasswd.png" alt="Setting the root password" title="Setting the root password"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Setting the root password - you won’t be able to see what you type</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/rootpasswd.png" alt="Setting the root password" title="Setting the root password - you won&#39;t be able to see what you type"></p>
 <p>It’s worth creating a seperate user so you have a home directory but don’t worry, you can easily be granted administrator priviledges (or root access if you want to sound fancy). To start, run the command</p>
 <p><code>useradd -m -G wheel -s /bin/bash username</code></p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/makeuser.png" alt="Adding a user" title="Adding a user"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Adding a user</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/makeuser.png" alt="Adding a user" title="Adding a user"></p>
 <p>You can change username to whatever you like. The <code>-m</code> option gives you a home directory located at <code>/home/username</code> (though you may see it often written as <code>~</code>), <code>-G wheel</code> adds you to the wheel group (more on that later), and <code>-s /bin/bash</code> sets your default shell to Bash (you can easily change Bash out for another terminal like Fish or ZSH). You should then set a password by running</p>
 <p><code>passwd username</code></p>
 <p>To get root access, you must modify the <code>sudoers</code> file. This can be done by running the command</p>
 <p><code>export EDITOR=nano &amp; visudo</code></p>
 <p>and decommenting the line <code>%wheel ALL=(ALL:ALL) ALL</code></p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/sudoers.png" alt="Setting up sudo access" title="Setting up sudo access"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Setting up sudo access</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/sudoers.png" alt="Setting up sudo access" title="Setting up sudo access"></p>
 <h2 id="Installing-the-bootloader"><a href="#Installing-the-bootloader" class="headerlink" title="Installing the bootloader"></a>Installing the bootloader</h2><p>This step is crucial - the bootloader is a program run when your computer turns on which is responsible for loading the operating system. Most linux users use GRUB to perform this task, but it differs between if your drive boots in BIOS or UEFI mode. This article assumes your computer uses an x86 or x64 architecture - if you use a different processor type, this article is probably not something you need!</p>
-<table>
-<thead>
-<tr>
-<th><img src="/2022/04/27/install-arch/grub.png" alt="Installing GRUB on a BIOS drive" title="Installing GRUB on a BIOS drive"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Installing GRUB on a BIOS drive</td>
-</tr>
-</tbody></table>
+<p><img src="/2022/04/27/install-arch/grub.png" alt="Installing GRUB on a BIOS drive" title="Installing GRUB on a BIOS drive"></p>
 <h3 id="GRUB-for-BIOS"><a href="#GRUB-for-BIOS" class="headerlink" title="GRUB for BIOS"></a>GRUB for BIOS</h3><p>Run the following commands to install GRUB for BIOS drives</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pacman -S grub os-prober</span><br><span class="line">grub-install --target=i386-pc /dev/sda</span><br><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
 
@@ -409,6 +242,8 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pacman -S grub efibootmgr</span><br><span class="line">mount --mkdir [EFIPART] /boot/efi</span><br><span class="line">grub-install --target=x86_64-efi --bootloaderid=GRUB --efi-directory=/boot/efi</span><br><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
 
 <h2 id="Give-it-a-spin"><a href="#Give-it-a-spin" class="headerlink" title="Give it a spin"></a>Give it a spin</h2><p>Hopefully you’re all ready to go with Arch! Type <code>exit</code> and then <code>reboot</code>. Don’t forget to go into your BIOS when rebooting and ensure you’re now booting from your drive and not the install media.</p>
+<h2 id="Closing-thoughts"><a href="#Closing-thoughts" class="headerlink" title="Closing thoughts"></a>Closing thoughts</h2><p>I hope that helped out, and of course thank you to the excellent sources without whom I couldn’t have made this tutorial. My next suggestions are to install a desktop manager, like KDE (which is what I use, my favourite theme is sweetified-plasma), GNOME, or i3WM. Remember to run <code>sudo pacman -Syu</code> regularly to update your system, and remember, you’re now obliged to say “I use Arch btw” at any given oppourtunity.</p>
+<p>Cool sweet,<br>Johann</p>
 </div><div class="article-licensing box"><div class="licensing-title"><p>Arch Linux Installation Tutorial</p><p><a href="http://somecollagist.github.io/2022/04/27/install-arch/">http://somecollagist.github.io/2022/04/27/install-arch/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Johann Scott</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2022-04-27</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2022-04-28</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="../../../../tags/Operating-System/">Operating System</a><a class="link-muted mr-2" rel="tag" href="../../../../tags/Linux/">Linux</a><a class="link-muted mr-2" rel="tag" href="../../../../tags/Arch/">Arch</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/somecollagist" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="../../21/opening/"><span class="level-item">Starting blog...</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
             this.page.url = 'http://somecollagist.github.io/2022/04/27/install-arch/';
             this.page.identifier = '2022/04/27/install-arch/';
