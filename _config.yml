@@ -1,0 +1,32 @@
+title: somecollagist
+author:
+  name: Johann Scott
+  email: johann@somecollagist.com
+
+description: >-
+  Johann's Blog and Portfolio
+baseurl: ""
+url: "https://somecollagist.github.io"
+
+socials:
+  - { platform: email,      link: mailto:johann@somecollagist.com }
+  - { platform: github,     link: https://www.github.com/somecollagist }
+  - { platform: bandcamp,   link: https://johannscott.bandcamp.com/ }
+  - { platform: instagram,  link: https://www.instagram.com/somecollagist/ }
+  - { platform: discord,    link: https://discordapp.com/users/973629558039396364 }
+
+# # Build settings
+# plugins:
+#   - jekyll-feed
+
+# Config for GitHub Pages
+lsi: false
+safe: true
+source: .
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge

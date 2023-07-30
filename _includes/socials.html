@@ -1,0 +1,16 @@
+<p>Drop me a follow?</p>
+<p>
+	<ul class="socials-list horizontal-list">
+	{%- for entry in site.socials -%}
+		<li>
+			<a
+			{% unless entry.platform == 'rss' %} rel="me" {% endunless %}
+			href="{{ entry.link }}" target="_blank" title="{{ entry.platform }}">
+			<symbol id="{{entry.platform}}-icon" fill-rule="evenodd" clip-rule="evenodd">
+				<img src="{{ '/assets/socials/' | append: entry.platform | append: '.svg' }}" height="32" width="32"/>
+			</symbol>
+			</a>
+		</li>
+	{%- endfor -%}
+	</ul>
+</p>

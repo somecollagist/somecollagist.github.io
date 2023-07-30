@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto+Mono&display=swap');
+
+$base-font-family: 'Oxygen', sans-serif;
+$code-font-family: 'Roboto Mono', monospace;
+$base-font-size: 16px !default;
+
+$background: #1B1B1B;
+$foreground: #F5F5F5;
+$accent: #A00000;
+
+html {
+	font-family: $base-font-family;
+	background-color: $background;
+	color: $foreground;
+	margin: 0em 10%;
+	align-content: center;
+}
+
+#asciiBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 5%;
+	font-family: $code-font-family;
+	font-size: large;
+	text-align: center;
+	overflow-wrap: anywhere;
+	overflow-y: hidden;
+
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ul.horizontal-list {
+	list-style: none;
+	display: table;
+	margin: 0 auto;
+
+	li {
+		float: left;
+		margin: 1em;
+	}
+}
+
+#navbar, #body-content, footer {
+	position: absolute;
+	left: 10%;
+	right: 10%;
+}
+
+#navbar {
+	position: fixed;
+	top: 1em;
+	height: 4em;
+}
+
+#body-content {
+	top: 5em;
+	bottom: 11em;
+}
+
+footer {
+	text-align: center;
+	bottom: 1em;
+	height: 10em;
+
+	ul.socials-list li {
+		height: 2em;
+		width: 2em;
+		padding: 0.3em;
+		border-radius: 50%;
+		align-content: center;
+		background-color: $accent;
+	}
+}
