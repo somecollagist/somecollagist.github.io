@@ -1,14 +1,16 @@
 {%- include head.html -%}
 
+{%- include background.html -%}
+
 {%- include navbar.html -%}
 
-<div id="body-content">
-{{ content }}
-</div>
+{% if page.title %}
+<h1>{{page.title}}</h1>
+<hr style="width: 100%">
+{% endif %}
 
-<div id="asciiBackground">
+<div id="content" style="width: 80%; margin: 1em auto">
+	{{ content }}
 </div>
-
-<script src="{{ '/assets/scripts/backgroundgen.js' }}"></script>
 
 {%- include footer.html -%}

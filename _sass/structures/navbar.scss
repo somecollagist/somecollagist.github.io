@@ -1,0 +1,13 @@
+#navbar {
+	margin: 1em;
+	font-size: 1.25em;
+	font-weight: bold;
+
+	ul{
+		width: 100%;
+	}
+
+	a:visited {
+		color: $link-normal;
+	}
+}

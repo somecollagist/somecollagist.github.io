@@ -9,15 +9,16 @@ baseurl: ""
 url: "https://somecollagist.github.io"
 
 socials:
-  - { platform: email,      link: mailto:johann@somecollagist.com }
-  - { platform: github,     link: https://www.github.com/somecollagist }
-  - { platform: bandcamp,   link: https://johannscott.bandcamp.com/ }
-  - { platform: instagram,  link: https://www.instagram.com/somecollagist/ }
-  - { platform: discord,    link: https://discordapp.com/users/973629558039396364 }
+  - { platform: GitHub,     link: https://www.github.com/somecollagist }
+  - { platform: Bandcamp,   link: https://johannscott.bandcamp.com/ }
+  - { platform: Instagram,  link: https://www.instagram.com/somecollagist/ }
+  - { platform: Discord,    link: https://discordapp.com/users/973629558039396364 }
 
 # # Build settings
 # plugins:
 #   - jekyll-feed
+sass:
+  sass_dir: _sass
 
 # Config for GitHub Pages
 lsi: false

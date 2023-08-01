@@ -1,0 +1,10 @@
+ul.horizontal-list {
+	list-style: none;
+	display: table;
+	margin: 0 auto;
+
+	li {
+		float: left;
+		margin: 0.5em 1em;
+	}
+}

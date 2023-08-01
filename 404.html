@@ -3,23 +3,42 @@ permalink: /404.html
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+<style>
+	#oh-no-face {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+		opacity: 5%;
+		font-size: 48em;
+		font-weight: bolder;
+	}
+
+	#container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+		font-size: 2em;
+	}
+
+	#container h1 {
+		font-weight: bold;
+		font-size: 6em;
+	}
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div id="oh-no-face">
+	:(
+</div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div id="container">
+	<h1>404</h1>
+
+	<p>The requested page could not be found.</p>
+	<p>Return to homepage <a href="{{ 'index.html' }}" target="_self">here.</a></p>
 </div>

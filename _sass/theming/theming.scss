@@ -1,0 +1,27 @@
+@import 'lists';
+@import 'socials';
+@import 'text';
+
+html, body {
+	height: 100%;
+}
+
+html {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: 100;
+	background-color: $background;
+	color: $foreground;
+	margin: 0em 10%;
+	align-content: center;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+
+	#content {
+		flex: 1;
+	}
+}

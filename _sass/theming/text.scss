@@ -1,0 +1,31 @@
+h1 {
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: light;
+}
+
+a {
+	color: $link-normal;
+	text-decoration: none;
+
+	&:visited {
+		color: $link-visited;
+	}
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:focus-visible,
+	&:focus-within,
+	&:target {
+		color: $link-focus;
+	}
+}

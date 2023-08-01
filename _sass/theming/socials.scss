@@ -1,0 +1,13 @@
+ul.socials-list { // Should also be a horizontal list
+	svg {
+		height: 2em;
+		width: 2em;
+		align-content: center;
+		vertical-align: center;
+	}
+
+	.fill-target {
+		fill: $primary;
+		stroke: $primary;
+	}
+}
