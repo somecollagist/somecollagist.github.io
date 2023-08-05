@@ -10,5 +10,5 @@ $primary: #A00000;
 $accent: #00E0FF;
 
 $link-normal: $accent;
-$link-visited: adjust-color($color: $link-normal, $saturation: 0%, $lightness: -10%);
-$link-focus: adjust-color($color: $primary, $saturation: +30%, $lightness: +30%);
+$link-visited: #00C8FF;
+$link-focus: #00FFFF;
