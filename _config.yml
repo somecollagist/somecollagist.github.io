@@ -16,7 +16,7 @@ socials:
 
 # # Build settings
 # plugins:
-#   - jekyll-feed
+  # - jekyll-feed
 sass:
   sass_dir: _sass
 
