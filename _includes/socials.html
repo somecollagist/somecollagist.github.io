@@ -1,11 +1,11 @@
 Drop me a follow?
 <ul class="socials-list horizontal-list">
-	{%- for entry in site.socials -%}
+	{%- for entry in site.data.socials.socials -%}
 	<li>
 		<a {% unless entry.platform=='rss' %} rel="me" {% endunless %} href="{{ entry.link }}"
 			title="Follow me on {{ entry.platform }}!">
 			<symbol id="{{entry.platform}}-icon" fill-rule="evenodd" clip-rule="evenodd">
-				{% include_relative {{ entry.platform | prepend: '/assets/socials/' | append: '.svg' }} %}
+				{% include {{ entry.platform | prepend: '/socials/' | append: '.svg' }} %}
 			</symbol>
 		</a>
 	</li>

@@ -1,0 +1,20 @@
+---
+title: Projects
+layout: default
+---
+
+<style>
+	li {
+		list-style-type: none;
+	}
+</style>
+
+<ul>
+	{%- for project in site.data.projects.projects -%}
+	<li>
+		<h3><a href="{{ project.link }}">{{ project.name }}</a></h3>
+		{{ project.description}}
+	</li>
+	<hr>
+	{%- endfor -%}
+</ul>

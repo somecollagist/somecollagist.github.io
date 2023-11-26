@@ -1,0 +1,24 @@
+projects:
+ - {
+  name: Derecho,
+  description: "A hobby Operating System running on x64 UEFI.",
+  link: https://github.com/somecollagist/Derecho
+  }
+
+ - {
+  name: Brubeck,
+  description: "A balanced quinary computer emulator - written for an EPQ artefact, resulting in a world-first implementation of a computer of its kind.",
+  link: https://github.com/somecollagist/Brubeck
+ }
+
+ - {
+  name: Kyoto,
+  description: "A balanced ternary computer emulator - based off the Brubeck Engine, aiming to fix its shortcomings in a different radix.",
+  link: https://github.com/Kumomi-Systems/Kyoto
+ }
+
+ - {
+  name: screenwave,
+  description: "A screensaver for Wayland",
+  link: https://github.com/somecollagist/screenwave
+ }
