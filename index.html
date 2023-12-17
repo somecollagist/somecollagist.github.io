@@ -25,7 +25,7 @@ layout: default
 		<p style="font-size: 1.25em; font-style: italic;"
 			<span id="age">
 				<script>
-					const dob = new Date(2004, 12, 16);
+					const dob = new Date(2004, 11, 16); // Javascript is stupid
 					let diff = new Date(Date.now() - dob.getTime());
 					let age = Math.abs(diff.getUTCFullYear() - 1970);
 					document.getElementById("age").innerText += age + "-year-old";
