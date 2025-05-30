@@ -13,6 +13,7 @@
   }
 
   post.meta.date = `${post.meta.year }-${post.meta.month.toString().padStart(2, "0")}-${post.meta.day.toString().padStart(2, "0") }`;
+  post.post.banner = post.post.banner.replace(/^images\:/, '/assets/data/blog/images/');
   post.post.content = MarkdownIt().render(post.post.content);
   post.post.content = post.post.content.replaceAll("<a ", "<a target=\"_blank\"");
 </script>
@@ -24,7 +25,7 @@
   />
   <PageContent id="post">
     <div id="post-banner" v-if="post.post.banner.length != 0">
-      <img :src="post.post.banner.replace(/^images\:/, '/src/assets/data/blog/images/')"/>
+      <img :src="post.post.banner"/>
     </div>
     <div id="post-brief">
       "{{ post.post.brief }}"

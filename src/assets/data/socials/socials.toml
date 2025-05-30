@@ -1,29 +1,29 @@
 [Email]
 display = "johann@somecollagist.com"
 link    = "mailto:johann@somecollagist.com"
-icon    = "/src/assets/data/socials/email.svg"
+icon    = "/assets/data/socials/email.svg"
 
 [Github]
 display = "somecollagist"
 link    = "https://www.github.com/somecollagist"
-icon    = "/src/assets/data/socials/github.svg"
+icon    = "/assets/data/socials/github.svg"
 
 [Bandcamp]
 display = "Johann Scott"
 link    = "https://johannscott.bandcamp.com/"
-icon    = "/src/assets/data/socials/bandcamp.svg"
+icon    = "/assets/data/socials/bandcamp.svg"
 
 [LinkedIn]
 display = "Johann Scott"
 link    = "https://www.linkedin.com/in/somecollagist/"
-icon    = "/src/assets/data/socials/linkedin.svg"
+icon    = "/assets/data/socials/linkedin.svg"
 
 [Instagram]
 display = "@somecollagist"
 link    = "https://www.instagram.com/somecollagist/"
-icon    = "/src/assets/data/socials/instagram.svg"
+icon    = "/assets/data/socials/instagram.svg"
 
 [Discord]
 display = "@somecollagist"
 link    = "https://discordapp.com/users/973629558039396364"
-icon    = "/src/assets/data/socials/discord.svg"
+icon    = "/assets/data/socials/discord.svg"

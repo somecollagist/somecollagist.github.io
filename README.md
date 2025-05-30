@@ -1,29 +1,16 @@
-# somecollagist
+# [Jump in the water...](https://somecollagist.github.io)
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+Install dependencies:
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+Live editing:
+```
+npm run sass-watch & npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
+Preview before pushing:
+```
+npm run sass-once && npm run build && npm run preview
 ```
