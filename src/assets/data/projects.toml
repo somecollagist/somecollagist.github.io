@@ -1,0 +1,7 @@
+[wakatiwai]
+repo        = "https://github.com/kumomi-systems/wakatiwai"
+tags        = ["UEFI", "low-level"]
+description_brief = """
+A simple and configurable UEFI bootloader, written in Rust.
+"""
+photo = "https://kumomi-systems.org/assets/logo-transparent-dark-COrR7sBb.png"

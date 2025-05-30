@@ -1,0 +1,37 @@
+[life]
+based_in  = "the UK"
+
+[occupation]
+brief     = "CS Student"
+long      = "MSci Computer Scientist"
+activity  = "studying Computer Science"
+place     = "the University of St Andrews"
+link      = "https://www.st-andrews.ac.uk/computer-science/"
+
+[bio]
+bio = """
+My interests as a programmer are mainly in **low-level** and **systems
+programming**, though I'm also curious about **programming languages**,
+**ternary computing**, and **game development**. I use **Arch** btw.
+
+I'm the lead developer of [**Kumomi Systems**](https://kumomi-systems.org); an
+organisation I founded in 2023 and where most of my **big projects** live. I am
+also a member of the [**AVISI Group**](https://avisi.org.uk/), in which I have
+worked on **emualtion research**.
+
+More than just a computer nerd, I also like:
+  - **Music** - both listening to it and playing **guitar**, **bass**, or
+    **ukulele**.
+  - **Stories** - I'm a big fan of any tall tale; some of my favourites are **Star
+    Trek**, **Star Wars**, and **Lord of the Rings**.
+  - **Languages** - I speak **German** and have a basis in **Latin**, but I'd love
+    to also learn **Hungarian**, **te reo Māori**, **Klingon**, and **modern
+    Greek**.
+  - **Travelling** - I love visiting new places and meeting new people; I can't
+    wait to do more.
+  - **Exercise** - My main sport is **Aikido**, but I also enjoy going to the
+    **gym** and out on **walks**. It's a great way to clear my head and keep
+    myself healthy.
+  - **Games** - Some of my favourites are **Cribbage**, **Stellaris**, and
+    **Dungeons and Dragons**.
+"""

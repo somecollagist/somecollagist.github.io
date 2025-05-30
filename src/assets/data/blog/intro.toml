@@ -1,0 +1,46 @@
+[meta]
+title   = "'Ey up world!"
+year    = 2025
+month   = 5
+day     = 30
+tags    = ["Life"]
+
+[post]
+banner  = "images:intro/banner.png"
+brief   = "Better jump on the count of three..."
+content = """
+I've been told that the first blog post you ever make is probably going to be
+bad. In keeping with that tradition:
+
+My name's Johann. I'm currently writing this at 20:00 in my university's
+Computer Science department after throwing out my old website's codebase -
+it wasn't organised well at all and I could never reliably get it to run on
+my local machine, so out with Jekyll and in with Vue.I'm not a web dev though.
+Truth be told, I hadn't really anticipated building a new website (actually two,
+check out [Kumomi Systems](https://kumomi-systems.org)), especially not during
+my preparation for end of year exams (my bad...).
+
+But I felt that I should do two things: Actually get a framework under my
+belt - it's always a good skill to have - and make something to show off with.
+My recent project has been
+[Wakatiwai](https://kumomi-systems.org/#/projects/wakatiwai), and now that I'm
+nearing the time when I can release this project out into the world, I wanted
+to give it a proper place to be showcased.
+
+So here I am. A developer, a photographer, and the maker of whatever this post
+will be. I've been wanting to make a blog for a while, to do... something with.
+Maybe I'm inspired a bit by my friend David, maybe I just want to have a more
+productive way of saying something to the world without writing a letter and
+burning it, spreading the ashes into the North Sea. I guess expect anything but
+punctuality, I've no clue how often I'll actually write things on here, but
+it ought to revolve around something philosophical, introspective, or maybe
+just something I've done that I'm proud of.
+
+That's about it really. Please do stick around, it'd be cool to know if
+someone's reading my stuff (reach out, socials below!). Anyway, I'm going
+home. The AC in here is way too high.
+
+cool sweet,
+
+Johann
+"""

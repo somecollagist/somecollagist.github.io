@@ -1,0 +1,26 @@
+[meta]
+title   = "Template"  # The title of the blog post
+year    = 1970        # The year this was posted
+month   = 1           # The month this was posted
+day     = 1           # The day this was posted
+tags    = []          # Relevant tags for the post
+
+[post]
+banner  = ""          # An image used for the post
+brief   = ""          # A brief overview of the post
+content = """
+# H1
+## H2
+### H3
+#### H4
+
+`monospace line`
+
+```
+three lines
+of beautiful
+MONOSPACE!
+```
+
+[external links only!](https://www.example.com)
+"""
