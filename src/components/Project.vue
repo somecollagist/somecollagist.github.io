@@ -52,6 +52,7 @@
 <style lang="scss">
   .project {
     display: flex;
+    flex-direction: row;
     flex: 1;
 
     .project-photo {
@@ -63,8 +64,9 @@
 
     .project-about {
       position: relative;
+      height: 100%;
       width: 100%;
-      padding: 5vmin;
+      padding: 0 5vmin;
 
       .project-label {
         display: flex;
@@ -85,6 +87,20 @@
 
       .project-description {
         font-style: italic;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .project {
+      flex-direction: column;
+
+      .project-photo {
+        margin: 0 auto;
+      }
+
+      .project-about {
+        padding: 5vmin 0;
       }
     }
   }

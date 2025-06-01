@@ -28,23 +28,37 @@
 
 <style lang="scss">
   #face-card {
-		display: flex;
-		align-items: center;
-		vertical-align: middle;
-		justify-content: space-between;
-		flex-direction: row;
-		max-height: min-content;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+
+    >img {
+      border-radius: 20%;
+      height: 100%;
+      width: 100%;
+      margin: auto 0;
+    }
     
     >h3 {
       padding: 0 1em;
       margin: 0;
     }
-    
-    img {
-		  border-radius: 20%;
-      height: 10vmax;
+  }
+
+  @media (max-width: 800px) {
+    #face-card {
+      flex-direction: column;
+
+      >h3 {
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      >img {
+        margin: 1em 0;
+      }
     }
-	}
+  }
 
   #bio {
     font-size: 1.25em;
