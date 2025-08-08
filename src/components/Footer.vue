@@ -4,6 +4,7 @@
 
 <template>
   <footer id="footer">
+    <router-link to="/friends">Meet my friends!</router-link>
     <ul id="socials">
       <li v-for="(social, index) in socials">
         <a :href="social.link" target="_blank">

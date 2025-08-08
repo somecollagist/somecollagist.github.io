@@ -1,0 +1,60 @@
+[JoshuaBeighton]
+name        = "Joshua Beighton"
+photo       = "https://avatars.githubusercontent.com/u/83010264?v=4"
+description = "Computer Scientist at the University of St Andrews."
+website     = "https://joshuabeighton.github.io/"
+linkedin    = "https://www.linkedin.com/in/joshua-beighton-2870771b3/"
+github      = "https://github.com/JoshuaBeighton"
+
+[EmmyRicketts]
+name        = "Emmy Ricketts"
+photo       = "https://media.licdn.com/dms/image/v2/D4E03AQH-7FYUK51SGQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726324944677?e=1757548800&v=beta&t=rw1zs_Bw_iSucq9eAFNn3gMvT3aQUNOrFByssRUWgws"
+description = "Computer Scientist at the University of St Andrews."
+linkedin    = "https://www.linkedin.com/in/emmy-ricketts-3b3649247/"
+github      = "https://github.com/princenewton"
+
+[ShikharSrivastavaRoy]
+name        = "Shikhar Srivastava-Roy"
+description = "Computer Scientist at the University of St Andrews."
+website     = "https://shikhar-srivastava-16.github.io/"
+linkedin    = "https://www.linkedin.com/in/shikhar-srivastava-131a17278/"
+github      = "https://github.com/Shikhar-Srivastava-16"
+
+[JosephClarke]
+name        = "Joseph Clarke"
+photo       = "https://media.licdn.com/dms/image/v2/D4E03AQEWaTucaBCoNQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728052185938?e=1757548800&v=beta&t=IlkK-7HxAga_9Om43QQ6rn2ubbr8IzrWZgcDpRKWNwk"
+description = "Computer Scientist at the University of St Andrews."
+website     = "https://jc10101010.github.io/"
+linkedin    = "https://www.linkedin.com/in/joseph-clarke-315844329/"
+github      = "https://github.com/jc10101010/"
+
+[AlfioTomarchio]
+name        = "Alfio Tomarchio"
+photo       = "https://media.licdn.com/dms/image/v2/D4E03AQFY41K77palUw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694269912110?e=1757548800&v=beta&t=15gimN8pu-daRpsHPjZScRisxRLq8aukWqK1hmdTpLo"
+description = "Computer Scientist at the University of St Andrews."
+website     = "https://alfiot.net/"
+linkedin    = "https://www.linkedin.com/in/alfio-tomarchio-2097aa270/"
+github      = "https://github.com/p2js"
+
+[FelixLeitner]
+name        = "Felix Leitner"
+photo       = "https://avatars.githubusercontent.com/u/52215017?v=4"
+description = "Computer Scientist at the University of St Andrews."
+website     = "https://felixleitner.com/"
+linkedin    = "https://www.linkedin.com/in/felix-leitner-mittersinker-271b09200/"
+github      = "https://github.com/lixitrixi"
+
+[GeorgiiSkorokhod]
+name        = "Georgii Skorokhod"
+photo       = "https://avatars.githubusercontent.com/u/64529579?v=4"
+description = "Computer Scientist at the University of St Andrews."
+linkedin    = "https://www.linkedin.com/in/georgii-skorokhod-437881251/"
+github      = "https://github.com/gskorokhod"
+
+[NiklasDewally]
+name        = "Niklas Dewally"
+photo       = "https://avatars.githubusercontent.com/u/44070547?v=4"
+description = "Software Engineer at ARM."
+website     = "https://niklas.dewally.com/"
+linkedin    = "https://www.linkedin.com/in/niklasdewally/"
+github      = "https://github.com/niklasdewally"

@@ -8,6 +8,7 @@ import RootView     from "@/pages/Root.vue";
 import AboutView    from "@/pages/About.vue";
 import BlogView     from "@/pages/Blog.vue";
 import PostView     from "@/pages/Post.vue";
+import FriendsView  from "@/pages/Friends.vue";
 import ProjectsView from "@/pages/Projects.vue";
 import ResumeView   from "@/pages/Resume.vue";
 
@@ -16,6 +17,7 @@ const routes = [
   { path: '/about',           component: AboutView },
   { path: '/blog',            component: BlogView },
   { path: '/blog/:id',        component: PostView },
+  { path: '/friends',        component: FriendsView },
   { path: '/projects',        component: ProjectsView },
   { path: '/resume',          component: ResumeView },
   { path: '/:catchAll(.*)',   component: PageNotFound },
