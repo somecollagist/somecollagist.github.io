@@ -14,10 +14,10 @@
   <PageContent>
     <div id="face-card">
       <img src="../assets/images/face.jpg" />
-      <h3>
+      <span>
         I'm Johann, a <b>British-New Zealander</b> <b>{{ me.occupation.long }}</b> based in <b>{{ me.life.based_in }}</b>,
         currently <b>{{ me.occupation.activity }}</b> at <b><a :href="me.occupation.link" target="_blank">{{ me.occupation.place }}</a></b>.
-      </h3>
+      </span>
     </div>
     <br>
     <br>
@@ -28,53 +28,54 @@
 
 <style lang="scss">
   #face-card {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 auto;
+    display: grid;
+    grid: auto / auto 80%;
 
     >img {
       border-radius: 20%;
       height: 100%;
       width: 100%;
-      margin: auto 0;
+      margin: 0;
     }
     
-    >h3 {
-      padding: 0 1em;
-      margin: 0;
+    >span {
+      padding: 1rem;
+      font-size: 1.5rem;
+      align-content: center;
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-aspect-ratio: 4/3) {
     #face-card {
-      flex-direction: column;
-
-      >h3 {
-        text-align: center;
-        font-size: 1.5em;
-      }
-
+      grid: 20% 80% / 25% 50% 25%;
+    
       >img {
-        margin: 1em 0;
+        grid-row: 1;
+        grid-column: 2;
+      }
+      
+      >span {
+        grid-row: 2;
+        grid-column: 1 / 4;
       }
     }
   }
 
   #bio {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 
     h1 {
-      font-size: 1.5em;
+      font-size: 1.5rem;
     }
 
     h2 {
-      font-size: 1.4em;
+      font-size: 1.4rem;
     }
 
     ul {
-      list-style: ">  ";
+      list-style: "> ";
       li {
-        margin: 1vmin 0;
+        margin: 0.5rem 0;
       }
     }
   }

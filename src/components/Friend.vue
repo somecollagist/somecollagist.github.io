@@ -82,7 +82,7 @@
     .friend-photo {
       >img {
         border-radius: 20%;
-        height: 10vmax;
+        height: 8rem;
       }
     }
 
@@ -90,7 +90,7 @@
       position: relative;
       height: 100%;
       width: 100%;
-      padding: 0 5vmin;
+      padding: 0 2rem;
 
       .friend-label {
         display: flex;
@@ -100,12 +100,13 @@
         .friend-name {
           font-weight: 900;
           float: left;
-          font-size: 2.5vmax;
+          font-size: 2.5rem;
+          align-content: center;
         }
 
         .friend-socials {
           float: right;
-          font-size: 2vmax;
+          font-size: 2rem;
 
           ul#socials {
             list-style: none;
@@ -117,9 +118,9 @@
               margin: 0;
 
               .social-icon {
-                width:  4vmin;
-                height: 4vmin;
-                margin: 0 1vmin;
+                width:  2rem;
+                height: 2rem;
+                margin: 0 0.5rem;
 
                 filter: invert(65%) sepia(32%) saturate(3229%) hue-rotate(145deg) brightness(106%) contrast(105%);
               }
@@ -134,7 +135,7 @@
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-aspect-ratio: 4/3) {
     .friend {
       flex-direction: column;
 
@@ -143,7 +144,7 @@
       }
 
       .friend-about {
-        padding: 5vmin 0;
+        padding: 1rem 0;
       }
     }
   }

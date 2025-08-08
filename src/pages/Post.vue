@@ -55,11 +55,11 @@
     #post-brief {
       text-align: center;
       font-style: italic;
-      margin: 1vmin;
+      margin: 1rem;
     }
 
     #post-content {
-      margin: 5vmin -10% 0;
+      margin: 2rem -10% 0;
     }
   }
 </style>

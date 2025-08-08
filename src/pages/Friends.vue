@@ -9,8 +9,6 @@
 <template>
   <PageTitle title="Friends"/>
   <PageContent>
-    Interested in the projects of some people I know? Have a look...
-    <br>
     <ul class="friend-list">
       <li v-for="(friendid, index) in Object.keys(friends)">
         <Friend
@@ -33,7 +31,7 @@
     padding: 0;
 
     li {
-      padding: 1vmin;
+      padding: 1rem 0;
     }
   }
 </style>

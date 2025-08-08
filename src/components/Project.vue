@@ -58,7 +58,7 @@
     .project-photo {
       >img {
         border-radius: 20%;
-        height: 10vmax;
+        height: 8rem;
       }
     }
 
@@ -66,7 +66,7 @@
       position: relative;
       height: 100%;
       width: 100%;
-      padding: 0 5vmin;
+      padding: 0 2rem;
 
       .project-label {
         display: flex;
@@ -77,11 +77,12 @@
           font-weight: 900;
           float: left;
           font-size: 2.5vmax;
+          align-content: center;
         }
 
         .project-tags {
           float: right;
-          font-size: 2vmax;
+          font-size: 2rem;
         }
       }
 
@@ -91,7 +92,7 @@
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 4/3) {
     .project {
       flex-direction: column;
 
@@ -100,7 +101,7 @@
       }
 
       .project-about {
-        padding: 5vmin 0;
+        padding: 1rem 0;
       }
     }
   }

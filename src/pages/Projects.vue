@@ -30,7 +30,7 @@
     padding: 0;
 
     li {
-      padding: 1vmin;
+      padding: 1rem 0;
     }
   }
 </style>

@@ -23,22 +23,22 @@
     width: 100%;
     margin: auto auto 0 auto;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     animation: fadeInUp 0.5s;
 
     ul#socials {
       list-style: none;
       display: table;
-      margin: 1vmin auto;
+      margin: 1rem auto;
 
       li {
         float: left;
-        margin: 0 1vmin;
+        margin: 0 1rem;
 
         .social-icon {
-          width:  4vmin;
-          height: 4vmin;
-          margin: 1vmin;
+          width:  1.75rem;
+          height: 1.75rem;
+          margin: 0.25rem;
 
           filter: invert(65%) sepia(32%) saturate(3229%) hue-rotate(145deg) brightness(106%) contrast(105%);
         }

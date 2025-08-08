@@ -26,11 +26,11 @@
   ul#cv-list {
     list-style: none;
     padding: 0;
-    margin: 5vmin;
+    margin: 2rem;
 
     li {
-      margin: 2vmin;
-      font-size: 3vmin;
+      margin: 2rem;
+      font-size: 2rem;
     }
   }
 </style>

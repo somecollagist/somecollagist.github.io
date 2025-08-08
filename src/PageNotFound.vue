@@ -34,7 +34,7 @@
 
     h1 {
       font-weight: bold;
-      font-size: 8vmin;
+      font-size: 5rem;
     }
   }
 </style>

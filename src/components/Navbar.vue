@@ -33,10 +33,10 @@
 </template>
 
 <style lang="scss">
-  $navbar_height: 5vmin;
+  $navbar_height: 1rem;
   #navbar {
-    margin: 2.5vmin;
-    font-size: 2.5vmin;
+    margin: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     height: fit-content;
 
@@ -53,7 +53,7 @@
 
       li {
         float: left;
-        margin: 0.5vmin 1vmin;
+        margin: 0.5rem 1rem;
       }
     }
 

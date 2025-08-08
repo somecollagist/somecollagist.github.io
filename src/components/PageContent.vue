@@ -8,7 +8,7 @@
   .page-content {
     opacity: 0;
     width: 80%;
-    margin: 2.5vmax auto 5vmax;
+    margin: 2rem auto 5rem;
     animation: fadeInUp 0.5s forwards 0.5s;
   }
 </style>

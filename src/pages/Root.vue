@@ -12,8 +12,8 @@
     <h2 style="font-weight: 100;">{{ me.occupation.brief }}</h2>
     <hr>
     <h3>Hey there! I'm Johann. 🤟</h3>
-    <div style="font-size: 1.5em">
-      <p style="font-size: 1.25em; font-style: italic;">
+    <div style="font-size: 1.5rem">
+      <p style="font-size: 1.75rem; font-style: italic;">
         {{ age }}-year-old <b>{{ me.occupation.long }}</b> at <b>{{ me.occupation.place }}</b>
       </p>
       <p>
@@ -25,21 +25,9 @@
 
 <style lang="scss">
   #title-card {
-    margin: 15% 0em;
+    margin: 15% 0;
 
     text-align: center;
     animation: fadeInUp 0.75s;
-
-    #kumomi-systems {
-      font-size: 6vw;
-      font-weight: bold;
-      white-space: nowrap;
-    }
-
-    #tagline {
-      font-size: 3vw;
-      font-style: italic;
-      white-space: nowrap;
-    }
   }
 </style>

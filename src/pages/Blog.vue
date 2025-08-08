@@ -61,6 +61,7 @@
       display: grid;
       grid-template-columns: 80% 20%;
       grid-template-rows: auto auto auto auto;
+      margin: 2rem 0;
 
       .post-header-title {
         grid-row: 1 / 1;
@@ -80,15 +81,14 @@
         grid-row: 2 / 2;
         grid-column: 1 / 2;
 
-        margin-left: 1vmin;
-        margin-bottom: 0.5vmin;
+        margin: 1rem;
       }
 
       .post-header-tags {
         grid-row: 3 / 3;
         grid-column: 1 / 2;
 
-        margin-left: 1vmin;
+        margin-left: 1rem;
         font-weight: bold;
       }
     }
