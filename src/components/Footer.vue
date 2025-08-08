@@ -29,11 +29,11 @@
     ul#socials {
       list-style: none;
       display: table;
-      margin: 1rem auto;
+      margin: 0.5rem auto;
 
       li {
         float: left;
-        margin: 0 1rem;
+        margin: 0 0.5rem;
 
         .social-icon {
           width:  1.75rem;
