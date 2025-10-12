@@ -15,7 +15,7 @@
     <div id="face-card">
       <img src="../assets/images/face.jpg" />
       <span>
-        I'm Johann, a <b>British-New Zealander</b> <b>{{ me.occupation.long }}</b> based in <b>{{ me.life.based_in }}</b>,
+        I'm Johann, a <b>Kiwi</b> <b>{{ me.occupation.long }}</b> based in <b>{{ me.life.based_in }}</b>,
         currently <b>{{ me.occupation.activity }}</b> at <b><a :href="me.occupation.link" target="_blank">{{ me.occupation.place }}</a></b>.
       </span>
     </div>
