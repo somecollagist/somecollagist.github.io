@@ -31,6 +31,7 @@ Built for Hack the Bubble 2025, vlawn is an ad-hoc, democratised LAN chatroom se
 photo = "https://kumomi-systems.org/assets/logo-transparent-dark-COrR7sBb.png"
 
 [gomoku]
+repo        = ""
 tags        = ["uni", "games"]
 description_brief = """
 An implementation of the popular strategy game Gomoku, completed for CS2006, written in Haskell.
@@ -38,6 +39,7 @@ An implementation of the popular strategy game Gomoku, completed for CS2006, wri
 photo = "uni"
 
 [cs2003p3]
+repo        = ""
 tags        = ["uni", "networking"]
 description_brief = """
 Java implementation of an HTTP server, completed for CS2003.
