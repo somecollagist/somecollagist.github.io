@@ -21,11 +21,13 @@
 <template>
   <div class="project">
     <div class="project-photo">
-      <img v-if="photo" :src="photo"/>
+      <img v-if="photo == 'uni'" src="../assets/images/st-andrews-vertical-monochrome-white.png"/>
+      <img v-else-if="photo" :src="photo"/>
     </div>
     <div class="project-about">
       <div class="project-label monospace">
-        <a class="project-name" :href="`${repo}`" target="_blank">{{ name }}</a>
+        <a class="project-name" v-if="repo" :href="`${repo}`" target="_blank">{{ name }}</a>
+        <span class="project-name" v-else>{{ name }}</span>
         <div class="project-tags">
           [
           <span v-for="tag in tags.slice(0,5)">

@@ -5,3 +5,65 @@ description_brief = """
 A simple and configurable UEFI bootloader, written in Rust.
 """
 photo = "https://kumomi-systems.org/assets/logo-transparent-dark-COrR7sBb.png"
+
+[eisen]
+repo        = "https://github.com/kumomi-systems/eisen"
+tags        = ["OS", "low-level"]
+description_brief = """
+A simple, modern, x86_64 operating system, written in Rust.
+"""
+photo = "https://kumomi-systems.org/assets/logo-transparent-dark-COrR7sBb.png"
+
+[open-conlang]
+repo        = "https://github.com/kumomi-systems/open-conlang"
+tags        = ["linguistics"]
+description_brief = """
+Tooling for creating and working with constructed natural languages.
+"""
+photo = "https://kumomi-systems.org/assets/logo-transparent-dark-COrR7sBb.png"
+
+[vlawn]
+repo        = "https://github.com/kumomi-systems/vlawn"
+tags        = ["hackathon", "networking"]
+description_brief = """
+Built for Hack the Bubble 2025, vlawn is an ad-hoc, democratised LAN chatroom service.
+"""
+photo = "https://kumomi-systems.org/assets/logo-transparent-dark-COrR7sBb.png"
+
+[gomoku]
+tags        = ["uni", "games"]
+description_brief = """
+An implementation of the popular strategy game Gomoku, completed for CS2006, written in Haskell.
+"""
+photo = "uni"
+
+[cs2003p3]
+tags        = ["uni", "networking"]
+description_brief = """
+Java implementation of an HTTP server, completed for CS2003.
+"""
+photo = "uni"
+
+[MUG]
+repo        = "https://mug-project.org.uk/"
+tags        = ["research", "low-level"]
+description_brief = """
+Contributions to a Linux personality for a Rust-based unikernel, led by Dr Tom Spink as part of the AVISI group as the University of St Andrews.
+"""
+photo = "uni"
+
+[assembly-battleships]
+repo        = "https://github.com/somecollagist/assembly-battleships"
+tags        = ["low-level", "games"]
+description_brief = """
+A simple, reduced implementation of the popular strategy game Battleships, written in x86 real mode, fitting inside a boot sector!
+"""
+photo = "https://kumomi-systems.org/assets/logo-transparent-dark-COrR7sBb.png"
+
+[Spock]
+repo        = "https://github.com/somecollagist/Spock"
+tags        = ["logic"]
+description_brief = """
+A logic circuit simulator and simplifier for Windows.
+"""
+photo = "https://raw.githubusercontent.com/somecollagist/Spock/refs/heads/master/Spock/spocklogo.png"
