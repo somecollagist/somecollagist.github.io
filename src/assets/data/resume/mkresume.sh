@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Note: requires a full installation of `texlive` and `texlive-lang`
 
