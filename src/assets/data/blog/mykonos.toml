@@ -1,0 +1,35 @@
+[meta]
+title   = "Mykonos"   # The title of the blog post
+year    = 2026        # The year this was posted
+month   = 6           # The month this was posted
+day     = 18          # The day this was posted
+tags    = ["Life"]    # Relevant tags for the post
+
+[post]
+banner  = ""          # An image used for the post
+brief   = "Hisz mindez csupán apróság a nagyvilágban"
+content = """
+Some thoughts over the past 1357 days, for fear of further exploring the same damn theme...
+
+Think of an old friend you don't really interact with much more. Someone you knew on the playground at school, someone you chatted to at parties at Uni, someone you texted all the time with, anyone who's been out of the loop a long time will do. What happens when you see them again?
+
+A little while back, I did some wandering and I did some pondering (Skye, Joe, Sam, and I went up Ben Nevis, I wild camped half of the Great Glen Way, got some funny rheaumatic injuries - long story). I found myself sitting on the shores of Loch Lochy for a spot of lunch, and who messages me but a friend from childhood. We'd last spoken maybe five years ago? Last seen each other three years before that? I cannae lie, it was surreal seeing him text me. It's strange what the nostalgia of childhood can do to you, especially when its a part so much before my teen years (an even longer story, which I may yet write to you about someday). We chatted a bit. He's doing music production in London. Might go see him in a few weeks. I'm down in Cambridge now, working for Arm over the summer and having a whale of a time - my friend Ellie just finished her degree in Anthropology and Archaeology, and we hadn't seen each other since just after we finished our A-Levels three years ago. Met up with her on Tuesday, had a lovely evening.
+
+Ramsay and Ellie are two people from my past. The real atemi behind this post is another. Right around the time of my last blog post, someone came across my screen I hadn't expected (not on LinkedIn this time, thank God...). The whole dynamic is way too much to articulate in a blog post (wow, I *am* leaning into a theme), but anyway. Someone from the past I felt very close to. No conversations in two years, no meetings in three. And today I met with them.
+
+So, three old friends, after much distance both spatial and temporal, looping back into my life - oh how I adore the grand tapestry. A lot has changed in those three years. I've changed my name, defeated mental health demons, been in and out of a relationship, gotten a tattoo, picked up some good employment, learnt a martial art, and taken so many side quests I'd be here for a week listing every adventure. There is a hell of a lot of catching up to do with all three, but herein lies the challenge - what do you do when that catch up has deeper context? While a process on your computer might look to be ever alert, the OS is jumping from task to task thousands of times a second - transparent the the process, but those on a higher level know that things are interrupted. Sure, you can restore the registers on the context switch back, but we are not machines. The passage of time and the way we evolve isn't so cleanly cut, and it isn't easy to just pick up where you left off - personally, I don't think you can.
+
+Of course I miss you, I'm a sentimental old bastard. Not all of it, but the chats on the train, the in-jokes, the common interests, just being friends. That's what I have missed, do miss, and will miss when the time comes. Trying to negotiate part one, part two, and part three into whatever the stateful expression of a friendship is will no doubt be one hell of a challenge, and with the lenses changed I can't help but think - how different will it look? How much light does this crystal in the net refract?
+
+---
+
+Ō-Sensei taught that intention is always forward. Even when you move backwards, you are still forward-facing. Whatever happens, this too shall hold. Grand tapestry - some threads cross once and never again, some stay close, and some find a way to keep coming across each other. I'd like to keep mine braided with those three.
+
+I've been told I haven't changed much, in spite of all I said earlier. I hope that's not true. Maybe there's this wall around me, trying not to let myself get hurt by losing people again, or trying to keep me from making the move I need to with the avalanche surrounding me. If you knew me before September 2023, please reach out to me about this. I feel different but you'd know better than I would when it comes to something like this. 
+
+---
+
+I'll go sleep soon, got a big day tomorrow. But I'll get this proofed first and write the second part for my friend with the atemi. Catch you on the next draft.
+
+Johann
+"""
