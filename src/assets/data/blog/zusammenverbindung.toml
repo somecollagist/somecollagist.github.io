@@ -1,0 +1,30 @@
+[meta]
+title   = "Zusammenverbindung"  # The title of the blog post
+year    = 2026        # The year this was posted
+month   = 8           # The month this was posted
+day     = 28          # The day this was posted
+tags    = [life, musings]          # Relevant tags for the post
+
+[post]
+banner  = ""          # An image used for the post
+brief   = "The world feels so much smaller now."          # A brief overview of the post
+content = """
+I went to Wales a lot when I was a kid. The odd weekend here and there and a good chunk of my school holidays were spent exploring Snowdonia, going to the beach, riding my bike, and all sandwiched between sitting in the back of the car on the three hour trip there and back. It felt like such a long time that I'd have to fill one way or another. Even more so when I'd go to visit my Oma five hours away from my childhood home.
+
+---
+
+Arm's been great. It's my first big tech job and I'm glad to say it's everything I hoped it would be and more. Writing [low-level open-source software](https://www.trustedfirmware.org/projects/tf-a/
+) and getting paid to do it? It's a dream job and I'm very excited to come back in a year's time. Like I said at the end of a presentation, internships are more than just writing code; paramount to my enjoyment of these last three months has been the amazing people I've met, worked with, and learnt from - that's not just my colleagues but also my fellow interns. I played a lot of pool.
+
+I've got my car here and with that comes a lot of independence in what I do. There's been seven big trips I've done so far this summer. A sleepover in Kent. Meeting with uni mates. Visiting family. Seeing a solar eclipse. Going back to Yorkshire, to my favourite place in the whole world. I'm the one with the vehicle so I'm the one driving my friends, and those two, three, four hours don't really seem all that bad in hindsight. Hell, the eleven hours from St As to Cambridge was a trek but hardly the pinnacle of inaccessibility. I've done so much and gone such distance with so many wonderful people. We're gonna meet up sometime in the new year, even if most of my Arm buddies are coming back as grads (before I do, I <3 my five-year master's). And I can just do that? See friends on the other end of the country with no tickets, no permissions asked, just hop in the driver's seat, play some music to operate heavy machinery, and go? I still remember driving up to the Highlands with Skye and feeling really quite proud I could do that.
+
+---
+
+Part of why I love St Andrews is that I know people from all over the world. Even though I'll miss a lot of them now they've graduated, I know there's a part of each other we'll always carry with us. Part of me goes somewhere new and part of them comes with me to St Andrews, back to here, and onto wherever I emigrate to.
+
+So, as I lay in this bare rented-out room, with half my life packed into my car and waiting to take a flight to Italy for nearly a week, I can't help but feel that the world is no less wondrous, but still a little smaller. There's always room for you though, and I'd love to have you along.
+
+Waiting for thunderstorms,
+
+Johann
+"""
