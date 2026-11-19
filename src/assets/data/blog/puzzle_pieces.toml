@@ -1,0 +1,29 @@
+[meta]
+title = "Puzzle Pieces" # The title of the blog post
+year = 2026 # The year this was posted
+month = 11 # The month this was posted
+day = 19 # The day this was posted
+tags = ["Life", "Musings"] # Relevant tags for the post
+
+[post]
+banner = "" # An image used for the post
+brief = "Wait, that works?" # A brief overview of the post
+content = """
+Hey! Been a minute! Let's catch up!
+
+Where to start? So much has happened it all blurs together a little. Trip to Italy with friends old and new, reunited with those near to me and connected to those far from me, and new friendships forged. It's been so good these past few weeks and months, of course not at all times (those scathing emails were VERY necessary and RIP Patrick Stewart) but honestly? I've had a blast, all things considered.
+
+The future looks bright. I'm back to Arm in summer and likely getting a place with mates. I'm sure Cambridge part 2 will be filled with many more expeditions and hangouts to boot I'll be grinning for 12 weeks straight. Race2Prage in March, GGW (the second attempt, ideally without dislocating my ass) in May, Angine de Poitrine in June, NZ in October, with graduation and The European Roadtrip in summer '28. Then I guess full time job? Move abroad by end of 2031? There's so many plans and I'm damn excited and terrified at the same time. I'll keep thinking of what you tell me.
+
+---
+
+So many of my friends graduate this summer (as if last summer wasn't already heartbreaking seeing Felix and Georgii go) and I will miss them all dearly. I used to be scared that I'd never be able to keep up friendships after our paths diverged, but if the past few months have taught me anything, it's that those fears are hugely unfounded (not to be disputed, good sir). Even looping onto that point about the future, I keep thinking of inviting everyone over to wherever my place is ten years from now and us all just having a whale of a time. You and I just belong together that sorta way. Puzzle Pieces.
+
+Verified and Attested to,
+
+jas
+
+---
+
+[The Sound of Musings, vol. II](https://open.spotify.com/playlist/3I2xbFg3LezYD8LxqLzS0G)
+"""
